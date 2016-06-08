@@ -8,33 +8,37 @@
 <body>
 	<div class="container">
 		<div class="result">
-			<div class="label">X win</div>
-			<div>
-				<output id="x-result">0</output>
+			<div class="score">
+				<div class="label">X win</div>
+				<div>
+					<output id="x-result">0</output>
+				</div>
+			</div>
+			<div class="score">
+				<div class="label">O win</div>
+				<div>
+					<output id="o-result">0</output>
+				</div>
 			</div>
 		</div>
-		<div class="result">
-			<div class="label">O win</div>
-			<div>
-				<output id="o-result">0</output>
+		<div class="game-consol">
+			<div class="line">
+				<button onclick="clickButton(this)"></button>
+				<button onclick="clickButton(this)"></button>
+				<button onclick="clickButton(this)"></button>
+			</div>
+			<div class="line">
+				<button onclick="clickButton(this)"></button>
+				<button onclick="clickButton(this)"></button>
+				<button onclick="clickButton(this)"></button>
+			</div>
+			<div class="line">
+				<button onclick="clickButton(this)"></button>
+				<button onclick="clickButton(this)"></button>
+				<button onclick="clickButton(this)"></button>
 			</div>
 		</div>
-		<div class="line">
-			<button></button>
-			<button></button>
-			<button></button>
-		</div>
-		<div class="line">
-			<button></button>
-			<button></button>
-			<button></button>
-		</div>
-		<div class="line">
-			<button></button>
-			<button></button>
-			<button></button>
-		</div>
-		<button type="reset" class="reset">reset</button>
+		<button type="reset" class="reset" onclick="resetGame(this)">reset</button>
 	</div>
 
 
